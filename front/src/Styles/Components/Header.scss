@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+
+.header-container{
+    width: 100%;
+
+    .header-list{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+}
+
+    .logo{
+        width: 15%;
+    }
+}
+
+

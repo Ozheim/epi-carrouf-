@@ -1,0 +1,19 @@
+@mixin headerColor($color) {
+    color : $color;
+}
+ 
+@mixin bg-color($color){
+    color: $color;
+}
+
+@mixin text-color($color){
+    color: $color;
+}
+
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
