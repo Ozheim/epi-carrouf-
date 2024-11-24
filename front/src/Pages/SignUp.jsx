@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import "../Styles/Pages/SignUp.scss";
 
 const SignUp = () =>{
     const [email,setEmail] = useState();
@@ -44,7 +45,8 @@ const SignUp = () =>{
                 )
             }
     return(
-        <div>
+        <div className="signup-container">
+            
             <form onSubmit={registration}>
                 <label>Email</label>
                 <input type="email" value={email} onChange={(e)=>{setEmail(e.target.value)}} />
