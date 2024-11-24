@@ -1,39 +1,56 @@
 @import "../base/variables";
 
 .header-container {
-    background-color: $primary-color;
-    padding: $padding;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
+    width: 100%;
+    padding: $padding;
+    background-color: $primary-color;
 }
 
 .header-list {
     list-style: none;
     display: flex;
     align-items: center;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    width: 100%;
 
     li {
-        margin: 0 $padding;
-    }
+        display: flex;
+        align-items: center;
 
-    .logo {
-        width: 120px;
-    }
-
-    .Connexion-button a {
-        color: $secondary-color;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 0.5rem 1rem;
-        border: 1px solid $secondary-color;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-
-        &:hover {
-            background-color: $secondary-color;
-            color: #fff;
+        .logo {
+            width: 120px;
+            height: auto;
         }
+
+   
+    }
+
+    .link-Container{
+        display: flex;
+        justify-content: row;
+        gap: 20px;
+
+        a {
+            color: $secondary-color;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border: 1px solid $secondary-color;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: $secondary-color;
+                color: #fff;
+                transform: scale(1.05);
+            }
+        }
+
     }
 }

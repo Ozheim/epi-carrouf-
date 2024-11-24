@@ -1,7 +1,9 @@
-@import "base/_variables.scss";
-@import "base/_reset.scss";
-@import "layout/_header.scss";
-@import "layout/_footer.scss";
-@import "components/_buttons.scss";
-@import "components/_cards.scss";
-@import "pages/_home.scss";
+@import "base/Variables.scss";
+@import "base/Reset.scss";
+@import "Pages/Login.scss";
+@import "Pages/SignUp.scss";
+@import "Pages/Store.scss";
+@import "Components/Footer.scss";
+@import "Components/Header.scss";
+
+
