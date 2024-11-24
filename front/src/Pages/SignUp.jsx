@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
-import "../Styles/Pages/SignUp.scss";
 
 const SignUp = () =>{
     const [email,setEmail] = useState();
@@ -37,7 +36,7 @@ const SignUp = () =>{
     }
 
        const rankElo = (rank) =>{
-                if(rank!= "platinium" && "diamond" && "master" && "grandMaster"){
+                if(rank!= "platinium" && "diamond" && "master" && "grandMaster" && "Owen" && "owen"){
                     return navigate("/poubelle ")
                 }
                 else(
@@ -46,7 +45,7 @@ const SignUp = () =>{
             }
     return(
         <div className="signup-container">
-            
+
             <form onSubmit={registration}>
                 <label>Email</label>
                 <input type="email" value={email} onChange={(e)=>{setEmail(e.target.value)}} />

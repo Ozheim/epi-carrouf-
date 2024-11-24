@@ -1,4 +1,4 @@
-import "../Styles/Components/Header.scss";
+
 import Logo from "../Assets/logo.png";
 
 

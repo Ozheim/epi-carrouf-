@@ -46,31 +46,28 @@ const Store = () =>{
     console.log("Panier mis à jour :", count); //use effect pour voir en temps reel l'ajout des items dans la console, quand ta le back et possibilité de test tu peux delete fort
 }, [count]);
 
-    return(
-        <div>
-            <div>
-                <HeaderStore/>
-            </div>
-            <div>
-            {items.length> 0 ?(
-                    items.map((Item)=>(
-                    <div key={Item._id} className="Item-card"> 
+   return (
+    <div className="store-container">
+        <HeaderStore />
+        <div className="items-list">
+            {items.length > 0 ? (
+                items.map((Item) => (
+                    <div key={Item._id} className="item-card">
                         <h2>{Item.title}</h2>
-                        <img src={Item.image}/>
+                        <img src={Item.image} alt={Item.title} />
                         <p>{Item.description}</p>
-                        <p>{Item.price}</p>
+                        <p>{Item.price} €</p>
                         <button onClick={() => AddToCart(Item)}>Ajouter au Panier</button>
                     </div>
-            )) 
-                ): (
-                    <p>Aucun artcile trouvé</p>
+                ))
+            ) : (
+                <p className="empty-message">Aucun article trouvé</p>
             )}
-            </div>
-            <div>
-                <Footer/>
-            </div>
         </div>
-    )
+        <Footer />
+    </div>
+);
+
 }
 
 export default Store;
