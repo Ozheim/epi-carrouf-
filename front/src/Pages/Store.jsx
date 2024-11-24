@@ -6,7 +6,7 @@ import Footer from "../Components/Footer";
 const Store = () =>{
 
     const mockItems = [
-    { _id: '1', title: 'Article 1', image: 'image1.jpg', description: 'Description 1', price: 10 },
+    { _id: '1', title: 'Article 1', image: 'image1.jpg', description: 'Description 1', price: 10 }, //static database, a supprimer( avoue la tu te sens pris pr un dg)
     { _id: '2', title: 'Article 2', image: 'image2.jpg', description: 'Description 2', price: 20 },
     { _id: '3', title: 'Article 3', image: 'image3.jpg', description: 'Description 3', price: 30 },
 ];

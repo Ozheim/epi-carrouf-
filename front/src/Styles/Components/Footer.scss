@@ -1,0 +1,9 @@
+@import "../base/variables";
+
+.footer-container {
+    background-color: $text-color;
+    padding: $padding;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+}

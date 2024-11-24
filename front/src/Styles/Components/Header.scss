@@ -1,22 +1,39 @@
-body{
-    margin: 0;
-}
+@import "../base/variables";
 
-.header-container{
-    width: 100%;
-
-    .header-list{
+.header-container {
+    background-color: $primary-color;
+    padding: $padding;
     display: flex;
-    flex-direction: row;
-    list-style-type: none;
     justify-content: space-between;
-    width: 90%;
     align-items: center;
+    color: #fff;
 }
 
-    .logo{
-        width: 15%;
+.header-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    li {
+        margin: 0 $padding;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .Connexion-button a {
+        color: $secondary-color;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border: 1px solid $secondary-color;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $secondary-color;
+            color: #fff;
+        }
     }
 }
-
-
