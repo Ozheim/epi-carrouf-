@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import HeaderStore from "../Components/HeaderStore.jsx";
-import Footer from "../Components/Footer";
+
 
 const Store = () =>{
 
@@ -64,7 +64,6 @@ const Store = () =>{
                 <p className="empty-message">Aucun article trouvé</p>
             )}
         </div>
-        <Footer />
     </div>
 );
 
