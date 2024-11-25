@@ -11,12 +11,12 @@ const SignUp = () =>{
     const registration = async (e) => {
         e.preventDefault();
         try{
-            const response = fetch("https:/localhost/api/grosCrane", {
+            const response = fetch("http://localhost:5000/register", {
                 method: "POST",
                 headers: {
                 'Content-type': 'application/json',
             },
-            body: JSON.stringify({email,password,rank}),
+            body: JSON.stringify({"email": email,"password":password}),
 
             });
 
