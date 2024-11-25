@@ -7,7 +7,6 @@ const Store = () =>{
 
     const [items, setItems]=useState([]);
     const [count,setCount] = useState([]);
-    const JeVeuxPasqueTuMarches = 1 
 
     useEffect(()=>{
             const fetchItems = async () =>{
@@ -31,7 +30,7 @@ const Store = () =>{
             }
 
             fetchItems();
-    },[JeVeuxPasqueTuMarches])
+    },[])
 
 
     const AddToCart = (item) =>{
