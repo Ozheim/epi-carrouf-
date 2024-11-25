@@ -5,19 +5,14 @@ import HeaderStore from "../Components/HeaderStore.jsx";
 
 const Store = () =>{
 
-    const mockItems = [
-    { _id: '1', title: 'Article 1', image: 'image1.jpg', description: 'Description 1', price: 10 }, //static database, a supprimer( avoue la tu te sens pris pr un dg)
-    { _id: '2', title: 'Article 2', image: 'image2.jpg', description: 'Description 2', price: 20 },
-    { _id: '3', title: 'Article 3', image: 'image3.jpg', description: 'Description 3', price: 30 },
-];
-    const [items, setItems]=useState(mockItems);
+    const [items, setItems]=useState([]);
     const [count,setCount] = useState([]);
     const JeVeuxPasqueTuMarches = 1 
 
     useEffect(()=>{
             const fetchItems = async () =>{
                 try{
-                    const response = fetch("http://localhost:3000/articles", {
+                    const response = await fetch("http://localhost:5000/articles", {
                     method: "GET",
                     headers: {
                          'Content-type': 'application/json',
@@ -28,6 +23,7 @@ const Store = () =>{
                     }
                     const data = await response.json();
                     setItems(data);
+                    console.log(data);
                 }catch(error){
                     console.error("Failed to load items : ", error)
                     
