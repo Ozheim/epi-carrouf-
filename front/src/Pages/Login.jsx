@@ -10,7 +10,7 @@ const Login = () => {
     const FetchUser = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("https:/LocalHost:5000/api/KilianIntBcpLaBotLane", {
+            const response = await fetch("http://localhost:3000/users", {
                 method: "POST",
                 headers: {
                     'Content-type': 'application/json',

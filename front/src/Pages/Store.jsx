@@ -12,12 +12,12 @@ const Store = () =>{
 ];
     const [items, setItems]=useState(mockItems);
     const [count,setCount] = useState([]);
-    const JeVeuxPasqueTuMarches = 1
+    const JeVeuxPasqueTuMarches = 1 
 
     useEffect(()=>{
             const fetchItems = async () =>{
                 try{
-                    const response = fetch("https:localhost/GrasdeNunu", {
+                    const response = fetch("http://localhost:3000/articles", {
                     method: "GET",
                     headers: {
                          'Content-type': 'application/json',
